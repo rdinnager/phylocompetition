@@ -4,7 +4,107 @@ RVersion: 3.3.0
 Repos: CRAN=https://cran.rstudio.com/,
     CRANextra=http://www.stats.ox.ac.uk/pub/RWin
 
+Package: BH
+Source: CRAN
+Version: 1.60.0-2
+Hash: be2967bcff307e561d9ba17faf03205c
+
+Package: DBI
+Source: CRAN
+Version: 0.4-1
+Hash: 6524d5c5d30ff74084ac028eeb19eb1b
+
+Package: R6
+Source: CRAN
+Version: 2.1.2
+Hash: c515e41c73294952cbb33ee1c1be5a2d
+
+Package: Rcpp
+Source: CRAN
+Version: 0.12.5
+Hash: 625a95cb4ef523a77ad02e140b715db6
+
+Package: assertthat
+Source: CRAN
+Version: 0.1
+Hash: 0afb92b59b02593c70ff8046700ba9d3
+
+Package: crayon
+Source: CRAN
+Version: 1.3.1
+Hash: b61d34886cf0f4b4fc4e4f52ea249390
+Requires: memoise
+
+Package: curl
+Source: CRAN
+Version: 0.9.7
+
+Package: digest
+Source: CRAN
+Version: 0.6.9
+Hash: fd55d5a024f160fc001a5ece1e27782d
+
+Package: dplyr
+Source: CRAN
+Version: 0.4.3
+Hash: e6d3a09516f2018080e4737423aadfa6
+Requires: BH, DBI, R6, Rcpp, assertthat, lazyeval, magrittr
+
+Package: getopt
+Source: CRAN
+Version: 1.20.0
+Hash: 951e83029bb5f798b53d7b53cbc50be9
+
+Package: lazyeval
+Source: CRAN
+Version: 0.1.10
+Hash: 9679f1ac7f6bc07bc79755f34cd15e1f
+
+Package: magrittr
+Source: CRAN
+Version: 1.5
+Hash: bdc4d48c3135e8f3b399536ddf160df4
+
+Package: memoise
+Source: CRAN
+Version: 1.0.0
+Hash: 56e7087c3559eb7ba72a9afb349bf896
+Requires: digest
+
+Package: optparse
+Source: CRAN
+Version: 1.3.2
+Hash: 43f92c822f50e22bd4d8408e7ed89651
+Requires: getopt
+
 Package: packrat
 Source: CRAN
 Version: 0.4.7-1
 Hash: 16ca16d36eb18d1d16113606ecc5c400
+
+Package: readr
+Source: CRAN
+Version: 0.2.2
+Hash: 26f8572dee39ace757753fa5c4286569
+Requires: BH, Rcpp, curl
+
+Package: remake
+Source: github
+Version: 0.2.0
+Hash: a0387dfac7b204f5578620a41b854953
+Requires: R6, crayon, digest, optparse, storr, yaml
+GithubRepo: remake
+GithubUsername: richfitz
+GithubRef: master
+GithubSha1: d7164c7967bd8ef15ceac85c779b813fa1bb7936
+
+Package: storr
+Source: CRAN
+Version: 1.0.1
+Hash: bbc5792fbd8d2a4eec0dfc7e1d6dd420
+Requires: R6, digest
+
+Package: yaml
+Source: CRAN
+Version: 2.1.13
+Hash: 4854ccabebc225e8a7309fb4a74980de

@@ -1,0 +1,15 @@
+packages:
+  - dplyr
+  - readr
+  
+sources:
+  - R/function.R
+
+targets:
+
+  all:
+    depends:
+      -report.html
+  
+  test_env_data:
+    command: read_csv("data/wb_plots.csv")
